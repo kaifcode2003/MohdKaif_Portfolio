@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Kaif - Software Engineer</title>
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-800">Mohd Kaif</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-sky-500 transition-colors">About</a>
+                <a href="#experience" class="hover:text-sky-500 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-sky-500 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-sky-500 transition-colors">Skills</a>
+                <a href="#contact" class="bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-sky-600 transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 hover:text-sky-500">About</a>
+            <a href="#experience" class="block py-2 hover:text-sky-500">Experience</a>
+            <a href="#projects" class="block py-2 hover:text-sky-500">Projects</a>
+            <a href="#skills" class="block py-2 hover:text-sky-500">Skills</a>
+            <a href="#contact" class="block mt-2 bg-sky-500 text-white px-4 py-2 rounded-lg text-center hover:bg-sky-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-20">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-800 mb-4">Mohd Kaif</h1>
+            <p class="text-xl md:text-2xl text-slate-600 mb-8">Software Engineer | AI & Machine Learning Enthusiast</p>
+            <p class="max-w-3xl mx-auto mb-8">
+                Final year engineering student eager to deliver impactful and cutting-edge engineering solutions. Strong foundation in Python, Machine Learning, and Data Structures & Algorithms.
+            </p>
+            <a href="#projects" class="bg-sky-500 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-sky-600 transition-transform transform hover:scale-105">View My Work</a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16">
+            <h2 class="section-title">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-2/3">
+                    <p class="mb-4">I am a passionate and driven final-year Electronics & Communication Engineering student at MIT World Peace University, specializing in Artificial Intelligence & Machine Learning. My goal is to tackle complex engineering challenges and contribute to forward-thinking projects.</p>
+                    <p class="mb-4">With hands-on experience in software development, including building backend systems and RESTful APIs, I am adept at turning complex requirements into functional and scalable solutions. I thrive in collaborative environments and possess strong leadership and communication skills.</p>
+                    <p>I'm actively seeking opportunities where I can apply my skills in software engineering and machine learning to make a tangible impact.</p>
+                </div>
+                 <div class="md:w-1/3 text-center">
+                    <img src="https://placehold.co/300x300/e2e8f0/334155?text=MK" alt="Mohd Kaif" class="rounded-full mx-auto shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16 bg-slate-100 -mx-6 px-6">
+            <h2 class="section-title">Experience</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="card mb-8">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold text-slate-800">Software Development Intern</h3>
+                        <p class="text-slate-500 mb-2">Jnana Prabodhini | Pune, India (Jan 2025 - June 2025)</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Developed and deployed the backend for Virtual Kiosk, now used in 10+ rural schools across Jammu, Arunachal Pradesh, and Manipur.</li>
+                            <li>Built RESTful APIs with Node.js & Express.js to track video interactions, learner engagement, and progress.</li>
+                            <li>Designed a scalable MongoDB schema handling 5,000+ learner logs; ensured consistency in offline-first environments.</li>
+                            <li>Integrated backend with Angular frontend for seamless UX, and packaged the system using pkg for lightweight deployment.</li>
+                            <li>Enabled real-time monitoring for government education officers to evaluate learning effectiveness remotely.</li>
+                        </ul>
+                    </div>
+                     <a href="https://www.jnanaprabodhini.org/virtual-kiosk/" target="_blank" class="inline-block mt-4 text-sky-500 hover:text-sky-600 font-semibold">View Project Details &rarr;</a>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold text-slate-800">Technology Intern (Virtual)</h3>
+                        <p class="text-slate-500 mb-2">Deloitte Australia - Forage Job Simulation (July 2025)</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Wrote Python code to unify telemetry data from IIoT devices across different formats, enabling real-time dashboard integration.</li>
+                            <li>Designed and delivered a professional software development proposal, detailing system scope, architecture, man-hour estimates, timeline, and support plan.</li>
+                            <li>Applied skills in data processing, software architecture documentation, and business communication.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Smart Task Scheduler -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold text-slate-800">Smart Task Scheduler</h3>
+                        <p class="text-slate-500 mb-2">March 2025 - Apr 2025</p>
+                        <p class="mb-4">A CLI-based task management system built with C++17 to demonstrate real-world application of data structures. It uses a Min-Heap for efficient priority-based scheduling and Hash Maps for constant-time task access.</p>
+                        <ul class="list-disc list-inside space-y-1 mb-4">
+                            <li>Implemented features for task addition, completion tracking, and deadline sorting.</li>
+                            <li>Designed custom Task objects with operator overloading.</li>
+                            <li>Encapsulated logic using OOP principles for modular and reusable code.</li>
+                        </ul>
+                        <p class="font-semibold mb-2">Tech Stack:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">C++</span>
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">STL</span>
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">Min-Heap</span>
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">Unordered Map</span>
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">OOP</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/kaifcode2003/smart-scheduler" target="_blank" class="inline-block mt-4 bg-slate-800 text-white text-center py-2 px-4 rounded-lg hover:bg-slate-900 font-semibold">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <!-- Project 2: Virtual Kiosk Backend -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold text-slate-800">Virtual Kiosk Backend</h3>
+                        <p class="text-slate-500 mb-2">Internship Project</p>
+                        <p class="mb-4">Developed the complete backend system for an offline-first educational platform deployed in 10+ rural schools. The system tracks learner engagement and synchronizes data when internet is available.</p>
+                        <ul class="list-disc list-inside space-y-1 mb-4">
+                            <li>Built RESTful APIs for tracking video interactions and progress.</li>
+                            <li>Designed a scalable MongoDB schema for over 5,000 learner logs.</li>
+                            <li>Packaged the application for lightweight deployment on low-spec hardware.</li>
+                        </ul>
+                         <p class="font-semibold mb-2">Tech Stack:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">Node.js</span>
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">Express.js</span>
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">MongoDB</span>
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">REST API</span>
+                        </div>
+                    </div>
+                     <a href="https://www.jnanaprabodhini.org/virtual-kiosk/" target="_blank" class="inline-block mt-4 bg-sky-500 text-white text-center py-2 px-4 rounded-lg hover:bg-sky-600 font-semibold">
+                        Learn More &rarr;
+                     </a>
+                </div>
+                <!-- Project 3: Virtual Calculator -->
+                 <div class="card">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold text-slate-800">Virtual Calculator Using OpenCV</h3>
+                        <p class="text-slate-500 mb-2">May 2025 - Jun 2025</p>
+                        <p class="mb-4">A proof-of-concept application that allows users to perform basic calculations on a virtual interface using hand gestures. The system uses computer vision to track hand movements and interpret them as input.</p>
+                        <ul class="list-disc list-inside space-y-1 mb-4">
+                            <li>Utilized OpenCV for real-time video capture.</li>
+                            <li>Implemented hand tracking algorithms to identify finger positions.</li>
+                            <li>Mapped gestures to calculator button presses.</li>
+                        </ul>
+                         <p class="font-semibold mb-2">Tech Stack:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">Python</span>
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">OpenCV</span>
+                            <span class="bg-slate-200 text-slate-700 px-2 py-1 rounded-md text-sm">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-slate-100 -mx-6 px-6">
+            <h2 class="section-title">Skills</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Technical Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">Data Structures & Algorithms</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">OOP</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">Java</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">C/C++</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">Python</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">Machine Learning</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">AI</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">Computer Vision</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">Node.js</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">React.js</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">MySQL</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">MongoDB</span>
+                        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full font-medium">Linux</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Soft Skills</h3>
+                     <div class="flex flex-wrap gap-3">
+                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-medium">Leadership</span>
+                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-medium">Management</span>
+                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-medium">Public Speaking</span>
+                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-medium">Effective Communication</span>
+                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-medium">Public Relations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Accomplishments Section -->
+        <section id="accomplishments" class="py-16">
+            <h2 class="section-title">Accomplishments</h2>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <div class="card flex items-center gap-4 !flex-row">
+                    <i class="fas fa-trophy text-2xl text-amber-500"></i>
+                    <p><strong>3rd Place:</strong> IIIT PUNE NEXUS Hackathon 2023.</p>
+                </div>
+                 <div class="card flex items-center gap-4 !flex-row">
+                    <i class="fas fa-rocket text-2xl text-sky-500"></i>
+                    <p><strong>Government Launched Project:</strong> Virtual Kiosk officially launched by Jammu government in Poonch.</p>
+                </div>
+                <div class="card flex items-center gap-4 !flex-row">
+                    <i class="fas fa-medal text-2xl text-slate-500"></i>
+                    <p><strong>Top 25 & Panel Winner:</strong> Smart India Hackathon 2023 university selection.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-slate-800 text-white -mx-6 px-6">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="max-w-xl mx-auto mb-8">I'm currently looking for new opportunities. Feel free to reach out!</p>
+                <div class="flex justify-center items-center space-x-8 text-2xl">
+                    <a href="mailto:mohdkaif200314@gmail.com" class="hover:text-sky-400 transition-colors"><i class="fas fa-envelope"></i><span class="sr-only">Email</span></a>
+                    <a href="http://www.linkedin.com/in/mohdkaif14" target="_blank" class="hover:text-sky-400 transition-colors"><i class="fab fa-linkedin"></i><span class="sr-only">LinkedIn</span></a>
+                    <a href="tel:+918477951109" class="hover:text-sky-400 transition-colors"><i class="fas fa-phone"></i><span class="sr-only">Phone</span></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-4">
+        <p>&copy; 2025 Mohd Kaif. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

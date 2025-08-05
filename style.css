@@ -1,0 +1,45 @@
+/* Add smooth scrolling and offset for the sticky header */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px; 
+}
+
+/* General body styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* slate-50 from Tailwind */
+}
+
+/* Custom class for section titles */
+.section-title {
+    font-size: 1.875rem; /* 3xl */
+    line-height: 2.25rem;
+    font-weight: 700; /* bold */
+    color: #1e293b; /* slate-800 */
+    margin-bottom: 2rem; /* mb-8 */
+    text-align: center;
+}
+
+/* Custom class for card elements */
+.card {
+    background-color: #ffffff; /* bg-white */
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card:hover {
+    --tw-translate-y: -0.25rem;
+    transform: translate(var(--tw-translate-x, 0), var(--tw-translate-y, 0)) rotate(var(--tw-rotate, 0)) skewX(var(--tw-skew-x, 0)) skewY(var(--tw-skew-y, 0)) scaleX(var(--tw-scale-x, 1)) scaleY(var(--tw-scale-y, 1));
+}
+
+/* Utility to make card content grow to fill space */
+.card-content {
+    flex-grow: 1;
+}
